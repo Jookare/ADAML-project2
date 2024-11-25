@@ -1,5 +1,5 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.0" pages="8">
-  <diagram name="RNN" id="EY-PFRimYKbz64p4tstH">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:132.0) Gecko/20100101 Firefox/132.0" version="24.9.0" pages="9">
+  <diagram name="RNN" id="zP1hkel4cf1yX5_yKC8H">
     <mxGraphModel dx="1687" dy="1036" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -268,7 +268,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="LSTM" id="gRVtm5Ex0nt8ftO6Ns1M">
+  <diagram name="LSTM" id="w-rC-VBq2jWGWbB2Q1Pa">
     <mxGraphModel dx="1195" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -622,7 +622,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Transformer" id="lxMlupsRbGyKl_OZoZfZ">
+  <diagram name="Transformer" id="7tyhGUWKGTLp3Jt_4PCr">
     <mxGraphModel dx="1434" dy="881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -633,13 +633,13 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="180" y="329.5" width="160" height="240" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-4" target="sqgUhy1NWYkt70VUPhTD-9" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-4" target="sqgUhy1NWYkt70VUPhTD-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-4" value="Multi-Head Attention" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="212.5" y="500" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;startSize=2;curved=0;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-7" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;startArrow=classic;startFill=1;startSize=2;curved=0;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="215" y="484.5" as="sourcePoint" />
             <mxPoint x="260" y="599.5" as="targetPoint" />
@@ -650,7 +650,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-7" target="sqgUhy1NWYkt70VUPhTD-10" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-7" target="sqgUhy1NWYkt70VUPhTD-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="260" y="449.5" />
@@ -662,7 +662,7 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-7" value="Add &amp;amp; Norm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="212.5" y="450" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="430.02857142857147" y="389.97" as="targetPoint" />
             <mxPoint x="260.02857142857147" y="389.97" as="sourcePoint" />
@@ -680,10 +680,10 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-10" value="Add &amp;amp; Norm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="212.5" y="340" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-13" target="sqgUhy1NWYkt70VUPhTD-15" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-13" target="sqgUhy1NWYkt70VUPhTD-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="285.78" y="540.5" as="targetPoint" />
             <mxPoint x="260" y="570.5" as="sourcePoint" />
@@ -693,28 +693,28 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-13" value="Input Embeddings" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="210" y="639.5" width="100" height="50" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-13" value="Input Embeddings" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="205" y="650" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-15" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-15" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-15" value="&lt;div&gt;+&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;fontSize=16;arcSize=50;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="250.14999999999998" y="599.5" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-17" target="sqgUhy1NWYkt70VUPhTD-15" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-17" target="sqgUhy1NWYkt70VUPhTD-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-17" value="Positional Encoding" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-17" value="Positional Encoding" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
           <mxGeometry x="120" y="584.25" width="90" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-19" target="sqgUhy1NWYkt70VUPhTD-13" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-19" target="sqgUhy1NWYkt70VUPhTD-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-19" value="Input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="230" y="709.5" width="60" height="30" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-19" value="Input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="225" y="720" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="234.02800000000013" y="540.5" as="targetPoint" />
             <mxPoint x="260" y="570.5" as="sourcePoint" />
@@ -724,10 +724,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-21" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;N×&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="100" y="419.5" width="50" height="40" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-21" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;N×&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="95" y="419.5" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-23" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-22" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-23" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="489.5" as="sourcePoint" />
             <mxPoint x="490" y="409.5" as="targetPoint" />
@@ -740,7 +740,7 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-23" value="&lt;div&gt;Masked&lt;/div&gt;&lt;div&gt;Multi-Head Attention&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="480" width="95" height="59.5" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-23" target="sqgUhy1NWYkt70VUPhTD-32" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-24" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-23" target="sqgUhy1NWYkt70VUPhTD-32" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="460" y="420" />
@@ -752,7 +752,7 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-25" value="Add &amp;amp; Norm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="430" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="7qtsZ6LOXeyr5NGlx65s-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;" edge="1" parent="1" source="sqgUhy1NWYkt70VUPhTD-26" target="sqgUhy1NWYkt70VUPhTD-45">
+        <mxCell id="7qtsZ6LOXeyr5NGlx65s-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-26" target="sqgUhy1NWYkt70VUPhTD-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-26" value="Feed Forward" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
@@ -761,10 +761,10 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-28" value="Add &amp;amp; Norm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="190" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-31" target="sqgUhy1NWYkt70VUPhTD-26" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-31" target="sqgUhy1NWYkt70VUPhTD-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-28" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="460" y="290" />
@@ -781,16 +781,16 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-32" value="Add &amp;amp; Norm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="300" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-34" target="sqgUhy1NWYkt70VUPhTD-37" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-34" target="sqgUhy1NWYkt70VUPhTD-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-34" value="Output Embeddings" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="410" y="640" width="100" height="50" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-34" value="Output Embeddings" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="405" y="650" width="110" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-37" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-37" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-36" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-37" target="sqgUhy1NWYkt70VUPhTD-25" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-36" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-37" target="sqgUhy1NWYkt70VUPhTD-25" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="460" y="560" />
@@ -802,19 +802,19 @@
         <mxCell id="sqgUhy1NWYkt70VUPhTD-37" value="&lt;div&gt;+&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;fontSize=16;arcSize=50;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="450" y="600" width="20" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-39" target="sqgUhy1NWYkt70VUPhTD-37" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-39" target="sqgUhy1NWYkt70VUPhTD-37" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-39" value="Positional Encoding" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-39" value="Positional Encoding" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
           <mxGeometry x="490" y="584.75" width="90" height="50.5" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-41" target="sqgUhy1NWYkt70VUPhTD-34" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-41" target="sqgUhy1NWYkt70VUPhTD-34" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-41" value="Outputs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
-          <mxGeometry x="420" y="710" width="80" height="30" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-41" value="Outputs" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="415" y="720" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-42" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="486" y="539.5" as="targetPoint" />
             <mxPoint x="460" y="570.5" as="sourcePoint" />
@@ -824,7 +824,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-23" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="434" y="539.5" as="targetPoint" />
             <mxPoint x="460" y="570.5" as="sourcePoint" />
@@ -834,13 +834,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;" edge="1" parent="1" source="sqgUhy1NWYkt70VUPhTD-45" target="ogk3QV_1HZL6fX_Tb_gl-1">
+        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-45" target="ogk3QV_1HZL6fX_Tb_gl-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-45" value="Linear" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="120" width="95" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;" parent="1" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;curved=0;endSize=2;strokeWidth=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" target="sqgUhy1NWYkt70VUPhTD-31" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="445" y="384.5" as="targetPoint" />
             <mxPoint x="370" y="410" as="sourcePoint" />
@@ -850,22 +850,22 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="sqgUhy1NWYkt70VUPhTD-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;×&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="570" y="375" width="50" height="40" as="geometry" />
+        <mxCell id="sqgUhy1NWYkt70VUPhTD-47" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;×&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;N&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;strokeWidth=2;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" vertex="1">
+          <mxGeometry x="565" y="375" width="60" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;dashed=1;strokeWidth=2;" edge="1" parent="1" source="sqgUhy1NWYkt70VUPhTD-48" target="sqgUhy1NWYkt70VUPhTD-2">
+        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-3" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=2;dashed=1;strokeWidth=2;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-48" target="sqgUhy1NWYkt70VUPhTD-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-48" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Encoder&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="120" y="270" width="110" height="40" as="geometry" />
+          <mxGeometry x="110" y="270" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;dashed=1;" edge="1" parent="1" source="sqgUhy1NWYkt70VUPhTD-49" target="sqgUhy1NWYkt70VUPhTD-1">
+        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;endSize=2;dashed=1;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-49" target="sqgUhy1NWYkt70VUPhTD-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="sqgUhy1NWYkt70VUPhTD-49" value="&lt;font style=&quot;font-size: 26px;&quot;&gt;Decoder&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;strokeWidth=2;" parent="1" vertex="1">
-          <mxGeometry x="290" y="140" width="110" height="40" as="geometry" />
+          <mxGeometry x="280" y="140" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="-lyTIqYwffNeG2Ycsj6--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;endSize=2;fontSize=16;" parent="1" source="sqgUhy1NWYkt70VUPhTD-2" target="sqgUhy1NWYkt70VUPhTD-2" edge="1">
+        <mxCell id="-lyTIqYwffNeG2Ycsj6--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;endSize=2;fontSize=16;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" source="sqgUhy1NWYkt70VUPhTD-2" target="sqgUhy1NWYkt70VUPhTD-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="140" y="439.5" as="sourcePoint" />
             <mxPoint x="140" y="459.5" as="targetPoint" />
@@ -875,7 +875,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="-lyTIqYwffNeG2Ycsj6--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;endSize=2;" parent="1" edge="1">
+        <mxCell id="-lyTIqYwffNeG2Ycsj6--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;curved=1;strokeWidth=2.5;endSize=2;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="540.0000000000002" y="429.9955172413793" as="sourcePoint" />
             <mxPoint x="540.0000000000002" y="351.03" as="targetPoint" />
@@ -885,13 +885,13 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-1" value="&lt;font&gt;Output&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;fontSize=16;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;strokeWidth=2.5;verticalAlign=middle;" vertex="1" parent="1">
+        <mxCell id="ogk3QV_1HZL6fX_Tb_gl-1" value="&lt;font&gt;Output&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Computer modern;fontSource=https%3A%2F%2Fgithub.com%2Fspratt%2FComputer-Modern%2Fblob%2F478ef3d4716bea134f9fc5c14f9c976fda120ee5%2Fcmunbl-webfont.woff;fontSize=16;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;strokeWidth=2.5;verticalAlign=middle;" parent="1" vertex="1">
           <mxGeometry x="412.5" y="50" width="95" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="RNN-layer" id="Jpu59HJC1ms3_T7wA5-t">
+  <diagram name="RNN-layer" id="1Ichx0LMjyv1eRyb1rs6">
     <mxGraphModel dx="1108" dy="928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1114,7 +1114,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="LSTM-layer" id="ok9OX-fB7juKou_jnJft">
+  <diagram name="LSTM-layer" id="CHmShbRm4Rj4Q9_mK-a2">
     <mxGraphModel dx="1400" dy="1172" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -1508,7 +1508,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Dense" id="N78xn_Iucl9JZD_nXBwm">
+  <diagram name="Dense" id="6yti79Uz1hz2NPPM3zk8">
     <mxGraphModel dx="532" dy="445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -2107,7 +2107,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Transformer-layer" id="9vrOPjceQdQvpfECBRU7">
+  <diagram name="Transformer-layer" id="R8Z9P8kthHmOh3DlYman">
     <mxGraphModel dx="1328" dy="1108" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -2380,7 +2380,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram name="Combination" id="6KGYt5ctFMt-Q89UQ_Y5">
+  <diagram name="Combination" id="zZEsMD-kRC2cd8-K933l">
     <mxGraphModel dx="1663" dy="1391" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -2881,6 +2881,38 @@
             <mxPoint x="705" y="67" as="sourcePoint" />
             <mxPoint x="705" y="41" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="vEChGrES5yGNlimDnI3W" name="CV">
+    <mxGraphModel dx="1434" dy="881" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-1" value="&lt;div&gt;Train&lt;/div&gt;01.2013 - 01.2014" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="160" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-2" value="&lt;div&gt;Validate&lt;/div&gt;&lt;div&gt;- 07.2014&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="240" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-7" value="&lt;div&gt;Train&lt;/div&gt;01.2013 - 01.2015" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="210" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-8" value="&lt;div&gt;Validate&lt;/div&gt;&lt;div&gt;- 07.2015&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="400" y="210" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-10" value="&lt;div&gt;Train&lt;/div&gt;01.2013 - 01.2016" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="260" width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-11" value="&lt;div&gt;Validate&lt;/div&gt;&lt;div&gt;- 07.2016&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="560" y="260" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-12" value="&lt;div&gt;Train&lt;/div&gt;01.2013 - 01.2017" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="80" y="310" width="640" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ZgrIRqfZOTT80d-syUIR-13" value="&lt;div&gt;Test&lt;/div&gt;&lt;div&gt;- 04.2017&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="720" y="310" width="80" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
