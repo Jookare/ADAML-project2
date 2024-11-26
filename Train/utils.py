@@ -33,8 +33,8 @@ def compute_reference_stats(df_train):
         roll_mean = roll.mean()
         roll_std = roll.std()
 
-        mean = pd.concat([roll_mean, roll_mean.iloc[:1], roll_mean, roll_mean.iloc[:117]], ignore_index=True) # Repeat for almost the whole period
-        std = pd.concat([roll_std, roll_std.iloc[:1], roll_std, roll_std.iloc[:117]], ignore_index=True)
+        mean = pd.concat([roll_mean, roll_mean, roll_mean.iloc[:118]], ignore_index=True) # Repeat for almost the whole period
+        std = pd.concat([roll_std, roll_std, roll_std.iloc[:118]], ignore_index=True)
 
         reference_stats[col] = {
             'mean': mean,
@@ -87,3 +87,38 @@ def normalize_data(df, stats = None):
         normalized_df[col] = (data - mean) / std
 
     return normalized_df, stats
+
+
+def rolling_train_valid_split(df, months=2, window_size=1):
+    """
+    Creates rolling train-validation splits for time-series data.
+    """
+    # Ensure the dataframe is sorted by date
+    df = df.sort_values('date')
+    
+    # Get start and end dates
+    start_date = df['date'].iloc[0]
+    end_date = df['date'].iloc[-1]
+    
+    # Loop through each year in the data
+    for year in range(start_date.year, end_date.year):
+        # Define training range: from January 1st of the current year to December 31st of the same year
+        train_start_date = pd.Timestamp(f"{year}-01-01")
+        train_end_date = pd.Timestamp(f"{year}-12-31")
+        
+        # Select training data for the current year
+        train = df[(df['date'] >= train_start_date) & (df['date'] <= train_end_date)]
+        
+        # Define validation range
+        valid_start_date = train_end_date - pd.Timedelta(days=window_size)  # Last month of the year
+        valid_end_date = train_end_date + pd.DateOffset(months=months)
+        
+        # Select validation data
+        valid = df[(df['date'] >= valid_start_date) & (df['date'] <= valid_end_date)]
+        
+        # Stop if there isn't enough validation data
+        if valid.empty or (len(valid) < (10 + window_size)):
+            valid = None
+        
+        yield train, valid
+        
