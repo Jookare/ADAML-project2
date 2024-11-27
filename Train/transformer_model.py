@@ -2,9 +2,7 @@ import torch.nn as nn
 import torch
 import torch.nn.functional as F
 import math
-# This code is partially written based on "The Annotated Transformer" 
-# as well as code I have written for my Vision Transformer implementation
-
+# Follows mostly the implementation of "The Annotated Transformer" 
 
 # ----- Attention ----- #
 class SelfAttention(nn.Module):
