@@ -227,9 +227,9 @@ class PositionalEncoding(nn.Module):
         return x
 
 class Embeddings(nn.Module):
-    def __init__(self, vocab, embed_dim, dropout, PAD):
+    def __init__(self, n_inputs, embed_dim, dropout):
         super(Embeddings, self).__init__()
-        self.embed = nn.Embedding(vocab, embed_dim, padding_idx=PAD)
+        self.embed = nn.Linear(n_inputs, embed_dim)
         
         self.dropout = nn.Dropout(p=dropout)
         
@@ -254,22 +254,22 @@ def subsequent_mask(size):
 
 # ----- Transformer ----- #
 class TransformerForecaster(nn.Module):
-    def __init__(self,  embed_dim, dropout, num_heads, num_layers, hidden_dim, n_inputs=6, n_outputs=1):
+    def __init__(self, hidden_size, embed_dim, encoder_heads, encoder_depth, decoder_heads, decoder_depth, input_size=6, out_features=1, dropout_p=0.2):
         super().__init__()
         # Embedding layers for input and target sequences
-        self.input_embed = nn.Linear(n_inputs, embed_dim)
-        self.target_embed = nn.Linear(n_outputs, embed_dim)
+        self.input_embed = Embeddings(input_size, embed_dim, dropout_p)
+        self.target_embed = Embeddings(out_features, embed_dim, dropout_p)
         
         # Encoder
-        self.encoder = Encoder(embed_dim, num_heads, hidden_dim, dropout, num_layers)
+        self.encoder = Encoder(embed_dim, encoder_heads, hidden_size, dropout_p, encoder_depth)
         
         # Decoder
-        self.decoder = Decoder(embed_dim, num_heads, hidden_dim, dropout, num_layers)
+        self.decoder = Decoder(embed_dim, decoder_heads, hidden_size, dropout_p, decoder_depth)
         
         # Output projection
-        self.mlp_head = nn.Linear(embed_dim, n_outputs)
+        self.mlp_head = nn.Linear(embed_dim, out_features)
         
-        self.dropout = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout_p)
         
     def forward(self, input, target, src_mask=None):
         """
@@ -296,29 +296,32 @@ class TransformerForecaster(nn.Module):
     
     
 class DecoderForecaster(nn.Module):
-    def __init__(self, embed_dim, dropout, num_heads, num_layers, hidden_dim, n_outputs=1):
+    def __init__(self, hidden_size, embed_dim, decoder_heads, decoder_depth, input_size=4, out_features=1, dropout_p=0.2):
         super().__init__()
         
-        # Target embeddings
-        self.target_embed = nn.Linear(n_outputs, embed_dim)
+        # Embedding layers for input and target sequences
+        self.input_embed = Embeddings(input_size, embed_dim, dropout_p)
+        self.target_embed = Embeddings(out_features, embed_dim, dropout_p)
         
         # Decoder
-        self.decoder = Decoder(embed_dim, num_heads, hidden_dim, dropout, num_layers)
+        self.decoder = Decoder(embed_dim, decoder_heads, hidden_size, dropout_p, decoder_depth)
         
         # Output projection
-        self.mlp_head = nn.Linear(embed_dim, n_outputs)
+        self.mlp_head = nn.Linear(embed_dim, out_features)
         
-        self.dropout = nn.Dropout(dropout)
+        self.dropout = nn.Dropout(dropout_p)
         
-    def forward(self, target, memory, src_mask=None):
+        
+    def forward(self, input, target, src_mask=None):
         """
         Args:
+            input: Tensor of shape (batch_size, input_seq_len, embed_dim) - Simulated encoder output
             target: Tensor of shape (batch_size, target_seq_len, n_outputs) - Decoder input
-            memory: Tensor of shape (batch_size, input_seq_len, embed_dim) - Simulated encoder output
             src_mask: Source padding mask (optional)
         Returns:
             Tensor of shape (batch_size, target_seq_len, n_outputs) - Predictions
         """
+        memory = self.input_embed(input)
         # Target embeddings
         target_embeds = self.target_embed(target)  # Shape: (batch_size, target_seq_len, embed_dim)
         
