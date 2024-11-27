@@ -23,7 +23,6 @@ def train(model, train_loader, criterion, optimizer, device, clip=1):
         optimizer.zero_grad()
         loss.backward()
         
-        nn.utils.clip_grad_norm_(model.parameters(), 3)
         optimizer.step()
         
         # Accumulate the training loss

@@ -1,5 +1,4 @@
 
-import lightning.pytorch as pl
 from torch.utils.data import Dataset, DataLoader
 from utils import rolling_train_valid_split
 import torch
@@ -40,17 +39,25 @@ class TimeSeriesDataset(Dataset):
             stride (int): stride for the windowing
         """
         n_samples, n_features = self.features.shape
+
+        # Extract day of year
+        day_of_year = self.date.dt.day_of_year.values
+
+    
         sequences = range(0, n_samples - window_size - horizon + 1, stride)
-        input = np.empty(
-            (len(sequences), window_size, n_features), dtype=np.float32)
-        target = np.empty(
-            (len(sequences), horizon), dtype=np.float32
-        )
-        for i in sequences:
-            input[i, :, :] = self.features.iloc[i: i + window_size, :].values
-            target[i, :] = (
-                self.features["humidity"]
-                .iloc[i + window_size: i + window_size + horizon]
-                .values
-            )
+        input = np.empty((len(sequences), window_size, n_features+2), dtype=np.float32)
+        target = np.empty((len(sequences), horizon), dtype=np.float32)
+        
+        for i, seq_start in enumerate(sequences):
+        # Combine features with day of year
+            window_features = self.features.iloc[seq_start: seq_start + window_size, :].values
+            window_day_of_year = day_of_year[seq_start: seq_start + window_size].reshape(-1, 1)
+
+            # Combine features with day of year
+            input[i, :, :4] = window_features
+            input[i, :, 4] = np.sin(window_day_of_year*(2*np.pi)/366).squeeze()
+            input[i, :, 5] = np.cos(window_day_of_year*(2*np.pi)/366).squeeze()
+
+            
+            target[i, :] = (self.features["humidity"].iloc[i + window_size: i + window_size + horizon].values)
         return torch.from_numpy(input), torch.from_numpy(target)
