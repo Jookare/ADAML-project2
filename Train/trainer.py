@@ -19,6 +19,7 @@ def train(model, train_loader, criterion, optimizer, device, model_type):
             # Pass the input through the model
             outputs, _ = model(inputs, prev_state)
         else:
+            # Shift the targets to the right so the input and the correct target match
             input = inputs[:, :-1, :]
             target = inputs[:, 1:, :]
             outputs = model(input, target)
