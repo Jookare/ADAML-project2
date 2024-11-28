@@ -45,7 +45,7 @@ class TimeSeriesDataset(Dataset):
 
     
         sequences = range(0, n_samples - window_size - horizon + 1, stride)
-        input = np.empty((len(sequences), window_size, n_features+2), dtype=np.float32)
+        input = np.empty((len(sequences), window_size, n_features + 2), dtype=np.float32)
         target = np.empty((len(sequences), horizon), dtype=np.float32)
         
         for i, seq_start in enumerate(sequences):

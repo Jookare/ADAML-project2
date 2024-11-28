@@ -21,7 +21,9 @@ class SelfAttention(nn.Module):
         self._init_weights()
     
     def _init_weights(self):
-        nn.init.xavier_uniform_(self.W)
+        nn.init.xavier_uniform_(self.Wq)
+        nn.init.xavier_uniform_(self.Wk)
+        nn.init.xavier_uniform_(self.Wv)
         
     def forward(self, q, k, v, mask=None):
         Q = torch.matmul(q, self.Wq)
@@ -256,7 +258,7 @@ class TransformerForecaster(nn.Module):
         super().__init__()
         # Embedding layers for input and target sequences
         self.input_embed = Embeddings(input_size, embed_dim, dropout_p)
-        self.target_embed = Embeddings(out_features, embed_dim, dropout_p)
+        self.target_embed = Embeddings(input_size, embed_dim, dropout_p)
         
         # Encoder
         self.encoder = Encoder(embed_dim, encoder_heads, hidden_size, dropout_p, encoder_depth)
@@ -278,6 +280,8 @@ class TransformerForecaster(nn.Module):
         Returns:
             Tensor of shape (batch_size, target_seq_len, n_outputs) - Predictions
         """
+        # print(input.shape)
+        # print(target.shape)
         # Encoder
         input_embeds = self.input_embed(input)  # Shape: (batch_size, input_seq_len, embed_dim)
         encoder_output = self.encoder(input_embeds, src_mask)  # Shape: (batch_size, input_seq_len, embed_dim)
@@ -285,10 +289,12 @@ class TransformerForecaster(nn.Module):
         # Decoder
         target_embeds = self.target_embed(target)  # Shape: (batch_size, target_seq_len, embed_dim)
         tgt_mask = subsequent_mask(target.size(1)).to(target.device)  # Causal mask for decoder
+        # print(tgt_mask)
         decoder_output = self.decoder(target_embeds, encoder_output, src_mask, tgt_mask)  # Shape: (batch_size, target_seq_len, embed_dim)
         
+        output = self.dropout(decoder_output[:, -1, :])
         # Project decoder output to the desired output dimension
-        output = self.mlp_head(decoder_output)  # Shape: (batch_size, target_seq_len, n_outputs)
+        output = self.mlp_head(output)  # Shape: (batch_size, target_seq_len, n_outputs)
         
         return output
     
@@ -299,7 +305,7 @@ class DecoderForecaster(nn.Module):
         
         # Embedding layers for input and target sequences
         self.input_embed = Embeddings(input_size, embed_dim, dropout_p)
-        self.target_embed = Embeddings(out_features, embed_dim, dropout_p)
+        self.target_embed = Embeddings(input_size, embed_dim, dropout_p)
         
         # Decoder
         self.decoder = Decoder(embed_dim, decoder_heads, hidden_size, dropout_p, decoder_depth)
@@ -328,8 +334,9 @@ class DecoderForecaster(nn.Module):
         
         # Decoder
         decoder_output = self.decoder(target_embeds, memory, src_mask, tgt_mask)  # Shape: (batch_size, target_seq_len, embed_dim)
-        
+
+        output = self.dropout(decoder_output[:, -1, :])
         # Project decoder output to desired output dimension
-        output = self.mlp_head(decoder_output)  # Shape: (batch_size, target_seq_len, n_outputs)
+        output = self.mlp_head(output)  # Shape: (batch_size, target_seq_len, n_outputs)
         
         return output

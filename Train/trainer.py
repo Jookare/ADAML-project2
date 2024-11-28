@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 
 # Train model
-def train(model, train_loader, criterion, optimizer, device, clip=1):
+def train(model, train_loader, criterion, optimizer, device, model_type):
     # Set model to train
     model.train()
     total_train_loss = 0
@@ -11,12 +11,21 @@ def train(model, train_loader, criterion, optimizer, device, clip=1):
     for batch in train_loader:
         inputs, targets = batch
         inputs, targets = inputs.to(device), targets.to(device)
+
+        if model_type == "RNN" or model_type == "LSTM":
+            # Initialize the hidden state
+            prev_state = model.init_state(inputs.size(0), device)
         
-        # Initialize the hidden state
-        prev_state = model.init_state(inputs.size(0), device)
-      
-        # Pass the input through the model
-        outputs, _ = model(inputs, prev_state)
+            # Pass the input through the model
+            outputs, _ = model(inputs, prev_state)
+        else:
+            input = inputs[:, :-1, :]
+            target = inputs[:, 1:, :]
+            outputs = model(input, target)
+            
+        # Squeeze away the extra dimensions
+        outputs = outputs.squeeze()
+        targets = targets.squeeze()
         
         # Calculate loss
         loss = criterion(outputs, targets)
@@ -33,7 +42,7 @@ def train(model, train_loader, criterion, optimizer, device, clip=1):
     return avg_train_loss
 
 
-def validate(model, valid_loader, criterion, device):
+def validate(model, valid_loader, criterion, device, model_type):
     # Set model to validation
     model.eval()
     total_val_loss = 0
@@ -42,12 +51,20 @@ def validate(model, valid_loader, criterion, device):
         for batch in valid_loader:
             inputs, targets = batch
             inputs, targets = inputs.to(device), targets.to(device)
+            if model_type == "RNN" or model_type == "LSTM":
+                # Initialize the hidden state
+                prev_state = model.init_state(inputs.size(0), device)
             
-            # Initialize the hidden state
-            prev_state = model.init_state(inputs.size(0), device)
-            
-            # Pass the input through the model
-            outputs, _ = model(inputs, prev_state)
+                # Pass the input through the model
+                outputs, _ = model(inputs, prev_state)
+            else:
+                input = inputs[:, :-1, :]
+                target = inputs[:, 1:, :]
+                outputs= model(input, target)
+        
+            # Squeeze away the extra dimensions
+            outputs = outputs.squeeze()
+            targets = targets.squeeze()
             loss = criterion(outputs, targets)
             
             # Calculate loss
@@ -56,5 +73,3 @@ def validate(model, valid_loader, criterion, device):
     # Return average validation loss
     avg_val_loss = total_val_loss / len(valid_loader)
     return avg_val_loss
-
-
