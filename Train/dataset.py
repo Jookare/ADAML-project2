@@ -46,7 +46,7 @@ class TimeSeriesDataset(Dataset):
         # Extract day of year
         day_of_year = self.date.dt.day_of_year.values
 
-        sequences = range(0, n_samples - window_size - horizon, stride)
+        sequences = range(0, n_samples - window_size - horizon + 1, stride)
         if date_as_var:
             n_features += 2
 
