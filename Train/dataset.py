@@ -13,11 +13,14 @@ class TimeSeriesDataset(Dataset):
         stride (int): stride for the windowing
     """
 
-    def __init__(self, df, window_size=7, horizon=0, stride=1, date_as_var = True):
+    def __init__(self, df, window_size=7, horizon=1, stride=1, date_as_var=True):
         self.features = df.drop(["date"], axis=1)
         self.date = df["date"]
         self.X, self.Y = self._sequencing(
-            window_size=window_size, horizon=horizon, stride=stride, date_as_var=date_as_var
+            window_size=window_size,
+            horizon=horizon,
+            stride=stride,
+            date_as_var=date_as_var,
         )
 
     def __len__(self):
@@ -43,11 +46,10 @@ class TimeSeriesDataset(Dataset):
         # Extract day of year
         day_of_year = self.date.dt.day_of_year.values
 
-        
         sequences = range(0, n_samples - window_size - horizon, stride)
         if date_as_var:
             n_features += 2
-            
+
         input = np.empty((len(sequences), window_size, n_features), dtype=np.float32)
         target = np.empty((len(sequences),), dtype=np.float32)
 
@@ -63,10 +65,14 @@ class TimeSeriesDataset(Dataset):
             # Combine features with day of year
             input[i, :, :4] = window_features
             if date_as_var:
-                input[i, :, 4] = np.sin(window_day_of_year * (2 * np.pi) / 366).squeeze()
-                input[i, :, 5] = np.cos(window_day_of_year * (2 * np.pi) / 366).squeeze()
+                input[i, :, 4] = np.sin(
+                    window_day_of_year * (2 * np.pi) / 366
+                ).squeeze()
+                input[i, :, 5] = np.cos(
+                    window_day_of_year * (2 * np.pi) / 366
+                ).squeeze()
 
             target[i] = self.features["humidity"].iloc[
-                seq_start + window_size + horizon
+                seq_start + window_size + horizon - 1
             ]
         return torch.from_numpy(input), torch.from_numpy(target)
