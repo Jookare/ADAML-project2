@@ -15,9 +15,9 @@ def pretreat_data(df_train, df_test):
     
     df_train_norm, train_stats = normalize_data(df_train_cleaned)
     df_test_norm, _ = normalize_data(df_test_cleaned, train_stats)
+    print(train_stats)
     
-    
-    return df_train_norm, df_test_norm, reference_stats
+    return df_train_norm, df_test_norm, train_stats
 
 
 def compute_reference_stats(df_train):
