@@ -6,6 +6,9 @@ import math
 
 # ----- Attention ----- #
 class SelfAttention(nn.Module):
+    """
+    Implements the attention layer
+    """
     def __init__(self, embed_dim, key_dim):
         super().__init__()
         self.embed_dim = embed_dim
@@ -50,6 +53,9 @@ class SelfAttention(nn.Module):
              
 # Multi head attention
 class MultiHeadAttention(nn.Module):
+    """
+    Implements the multi-head attention.
+    """
     def __init__(self, embed_dim=768, num_heads=12):
         super().__init__()
         self.num_heads = num_heads
@@ -140,7 +146,9 @@ class EncoderLayer(nn.Module):
         return x
 
 class Encoder(nn.Module):
-    "Core encoder is a stack of N layers"
+    """
+    The Transformer encoder composed of multiple encoder layers.
+    """
     def __init__(self, embed_dim, num_heads, hidden_dim, dropout, N):
         super(Encoder, self).__init__()
         self.layers = nn.ModuleList([EncoderLayer(embed_dim, num_heads, hidden_dim, dropout) for _ in range(N)])
@@ -206,8 +214,9 @@ class Decoder(nn.Module):
 
 # ----- Embedding ----- #
 class PositionalEncoding(nn.Module):
-    "Implement the PE function."
-
+    """
+    Implement the positional encoding function.
+    """
     def __init__(self, embed_dim, max_len=5000):
         super(PositionalEncoding, self).__init__()
 
@@ -227,6 +236,9 @@ class PositionalEncoding(nn.Module):
         return x
 
 class Embeddings(nn.Module):
+    """
+    Simple linear embedding function
+    """
     def __init__(self, n_inputs, embed_dim, dropout):
         super(Embeddings, self).__init__()
         self.embed = nn.Linear(n_inputs, embed_dim)
@@ -246,7 +258,9 @@ class Embeddings(nn.Module):
     
 # ----- Target masking ----- #  
 def subsequent_mask(size):
-    "Mask out subsequent positions."
+    """
+    Mask out subsequent positions.
+    """
     attn_shape = (1, size, size)
     subsequent_mask = torch.triu(torch.ones(attn_shape), diagonal=1).type(torch.uint8)
     return subsequent_mask == 0
@@ -278,10 +292,8 @@ class TransformerForecaster(nn.Module):
             target: Tensor of shape (batch_size, target_seq_len, n_outputs) - Decoder input
             src_mask: Encoder padding mask (optional)
         Returns:
-            Tensor of shape (batch_size, target_seq_len, n_outputs) - Predictions
+            Tensor of shape (batch_size, n_outputs) - Predictions
         """
-        # print(input.shape)
-        # print(target.shape)
         # Encoder
         input_embeds = self.input_embed(input)  # Shape: (batch_size, input_seq_len, embed_dim)
         encoder_output = self.encoder(input_embeds, src_mask)  # Shape: (batch_size, input_seq_len, embed_dim)
@@ -323,7 +335,7 @@ class DecoderForecaster(nn.Module):
             target: Tensor of shape (batch_size, target_seq_len, n_outputs) - Decoder input
             src_mask: Source padding mask (optional)
         Returns:
-            Tensor of shape (batch_size, target_seq_len, n_outputs) - Predictions
+            Tensor of shape (batch_size, n_outputs) - Predictions
         """
         memory = self.input_embed(input)
         # Target embeddings
