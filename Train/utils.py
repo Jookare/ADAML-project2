@@ -17,7 +17,7 @@ def pretreat_data(df_train, df_test):
     df_test_norm, _ = normalize_data(df_test_cleaned, train_stats)
     
     
-    return df_train_norm, df_test_norm
+    return df_train_norm, df_test_norm, reference_stats
 
 
 def compute_reference_stats(df_train):
@@ -89,7 +89,7 @@ def normalize_data(df, stats = None):
     return normalized_df, stats
 
 
-def rolling_train_valid_split(df, months=2, window_size=1):
+def rolling_train_valid_split(df, months=2, window_size=1, horizon=1):
     """
     Creates rolling train-validation splits for time-series data.
     """
@@ -110,15 +110,16 @@ def rolling_train_valid_split(df, months=2, window_size=1):
         train = df[(df['date'] >= train_start_date) & (df['date'] <= train_end_date)]
         
         # Define validation range
-        valid_start_date = train_end_date - pd.Timedelta(days=window_size)  # Last month of the year
+        valid_start_date = train_end_date - pd.Timedelta(days=window_size+horizon)  # Last month of the year
         valid_end_date = train_end_date + pd.DateOffset(months=months)
         
         # Select validation data
         valid = df[(df['date'] >= valid_start_date) & (df['date'] <= valid_end_date)]
         
         # Stop if there isn't enough validation data
-        if valid.empty or (len(valid) < (10 + window_size)):
+        if valid.empty or (len(valid) < (10 + window_size + horizon)):
             valid = None
         
         yield train, valid
+        
         
