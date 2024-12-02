@@ -74,3 +74,36 @@ def validate(model, valid_loader, criterion, device, model_type):
     # Return average validation loss
     avg_val_loss = total_val_loss / len(valid_loader)
     return avg_val_loss
+
+
+def test(model, test_dataset, device, model_type):
+    model.eval()
+    results = {"pred": [], "gt": []}
+    with torch.no_grad(): # Iterate
+        for idx in range(len(test_dataset)):
+            inputs, targets = test_dataset[idx]
+            inputs, targets = inputs.unsqueeze(0).to(device), targets.to(device)
+            if model_type == "RNN" or model_type == "LSTM":
+                # Initialize the hidden state
+                prev_state = model.init_state(inputs.size(0), device)
+            
+                # Pass the input through the model
+                outputs, _ = model(inputs, prev_state)
+            else:
+                # Shift the targets to the right so the input and the correct target match
+                input = inputs[:, :-1, :]
+                target = inputs[:, 1:, :]
+                outputs = model(input, target)
+
+            # Squeeze away the extra dimensions
+            outputs = outputs.squeeze()
+            targets = targets.squeeze()
+            
+            results["gt"].append(targets.cpu())
+            results["pred"].append(outputs.cpu())
+        
+
+    # Squeeze the extra dimensions away and turn to numpy
+    gt = np.array(results["gt"])
+    pred = np.array(results["pred"])
+    return gt, pred
