@@ -1,0 +1,148 @@
+2024-12-09 17:07:33 - INFO - Starting Experiment 1/37
+Hyperparameters:
+  window_size=5, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:08:09 - INFO - RMSE, SMAPE: 7.29 & 0.119
+2024-12-09 17:08:09 - INFO - Starting Experiment 2/37
+Hyperparameters:
+  window_size=10, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:08:43 - INFO - RMSE, SMAPE: 7.04 & 0.115
+2024-12-09 17:08:43 - INFO - Starting Experiment 3/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:09:18 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:09:18 - INFO - Starting Experiment 4/37
+Hyperparameters:
+  window_size=30, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:09:52 - INFO - RMSE, SMAPE: 6.95 & 0.112
+2024-12-09 17:09:52 - INFO - Starting Experiment 5/37
+Hyperparameters:
+  window_size=180, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:10:23 - INFO - RMSE, SMAPE: 20.41 & 0.318
+2024-12-09 17:10:23 - INFO - Starting Experiment 6/37
+Hyperparameters:
+  window_size=20, hidden_size=8, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:10:57 - INFO - RMSE, SMAPE: 7.08 & 0.114
+2024-12-09 17:10:57 - INFO - Starting Experiment 7/37
+Hyperparameters:
+  window_size=20, hidden_size=32, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:11:31 - INFO - RMSE, SMAPE: 6.79 & 0.107
+2024-12-09 17:11:31 - INFO - Starting Experiment 8/37
+Hyperparameters:
+  window_size=20, hidden_size=64, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:12:04 - INFO - RMSE, SMAPE: 6.82 & 0.108
+2024-12-09 17:12:04 - INFO - Starting Experiment 9/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:12:38 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:12:38 - INFO - Starting Experiment 10/37
+Hyperparameters:
+  window_size=20, hidden_size=256, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:13:12 - INFO - RMSE, SMAPE: 6.87 & 0.108
+2024-12-09 17:13:12 - INFO - Starting Experiment 11/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=8,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:13:46 - INFO - RMSE, SMAPE: 9.67 & 0.152
+2024-12-09 17:13:46 - INFO - Starting Experiment 12/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=32,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:14:21 - INFO - RMSE, SMAPE: 7.90 & 0.116
+2024-12-09 17:14:21 - INFO - Starting Experiment 13/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=64,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:14:55 - INFO - RMSE, SMAPE: 6.96 & 0.107
+2024-12-09 17:14:55 - INFO - Starting Experiment 14/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:15:30 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:15:30 - INFO - Starting Experiment 15/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=256,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:16:05 - INFO - RMSE, SMAPE: 7.08 & 0.111
+2024-12-09 17:16:05 - INFO - Starting Experiment 16/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=1, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:16:33 - INFO - RMSE, SMAPE: 7.00 & 0.113
+2024-12-09 17:16:33 - INFO - Starting Experiment 17/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=2, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:17:03 - INFO - RMSE, SMAPE: 7.01 & 0.114
+2024-12-09 17:17:03 - INFO - Starting Experiment 18/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:17:38 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:17:38 - INFO - Starting Experiment 19/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=8, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:18:20 - INFO - RMSE, SMAPE: 6.94 & 0.110
+2024-12-09 17:18:20 - INFO - Starting Experiment 20/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=1, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:18:41 - INFO - RMSE, SMAPE: 6.95 & 0.112
+2024-12-09 17:18:41 - INFO - Starting Experiment 21/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=2, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:19:07 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:19:07 - INFO - Starting Experiment 22/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:19:40 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:19:40 - INFO - Starting Experiment 23/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=8, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:20:30 - INFO - RMSE, SMAPE: 6.92 & 0.110
+2024-12-09 17:20:30 - INFO - Starting Experiment 24/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=1, decoder_depth=2
+2024-12-09 17:20:59 - INFO - RMSE, SMAPE: 6.97 & 0.110
+2024-12-09 17:20:59 - INFO - Starting Experiment 25/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:21:32 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:21:32 - INFO - Starting Experiment 26/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=4, decoder_depth=2
+2024-12-09 17:22:16 - INFO - RMSE, SMAPE: 7.03 & 0.110
+2024-12-09 17:22:16 - INFO - Starting Experiment 27/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=8, decoder_depth=2
+2024-12-09 17:23:21 - INFO - RMSE, SMAPE: 6.92 & 0.109
+2024-12-09 17:23:21 - INFO - Starting Experiment 28/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=1
+2024-12-09 17:23:44 - INFO - RMSE, SMAPE: 6.93 & 0.110
+2024-12-09 17:23:44 - INFO - Starting Experiment 29/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:24:18 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:24:18 - INFO - Starting Experiment 30/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=4
+2024-12-09 17:25:11 - INFO - RMSE, SMAPE: 7.16 & 0.112
+2024-12-09 17:25:11 - INFO - Starting Experiment 31/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=8
+2024-12-09 17:26:48 - INFO - RMSE, SMAPE: 7.26 & 0.114
+2024-12-09 17:26:48 - INFO - Starting Experiment 32/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:27:23 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:27:23 - INFO - Starting Experiment 33/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.4, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:27:57 - INFO - RMSE, SMAPE: 7.03 & 0.111
+2024-12-09 17:27:57 - INFO - Starting Experiment 34/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.6, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:28:32 - INFO - RMSE, SMAPE: 8.56 & 0.146
+2024-12-09 17:28:32 - INFO - Starting Experiment 35/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.8, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:29:07 - INFO - RMSE, SMAPE: 13.26 & 0.221
+2024-12-09 17:29:07 - INFO - Starting Experiment 36/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=True,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:29:42 - INFO - RMSE, SMAPE: 6.90 & 0.110
+2024-12-09 17:29:42 - INFO - Starting Experiment 37/37
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  encoder_heads=4, decoder_heads=4, dropout_p=0.2, output_size=1,  date_as_var=False,  encoder_depth=2, decoder_depth=2
+2024-12-09 17:30:17 - INFO - RMSE, SMAPE: 6.90 & 0.110
