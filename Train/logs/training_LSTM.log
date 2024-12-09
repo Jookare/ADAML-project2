@@ -1,0 +1,100 @@
+2024-12-09 10:21:33 - INFO - Starting Experiment 1/25
+Hyperparameters:
+  window_size=5, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:21:40 - INFO - RMSE, SMAPE: 7.70 & 0.123
+2024-12-09 10:21:40 - INFO - Starting Experiment 2/25
+Hyperparameters:
+  window_size=10, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:21:45 - INFO - RMSE, SMAPE: 7.62 & 0.121
+2024-12-09 10:21:45 - INFO - Starting Experiment 3/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:21:51 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:21:51 - INFO - Starting Experiment 4/25
+Hyperparameters:
+  window_size=30, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:21:56 - INFO - RMSE, SMAPE: 7.88 & 0.125
+2024-12-09 10:21:56 - INFO - Starting Experiment 5/25
+Hyperparameters:
+  window_size=180, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:07 - INFO - RMSE, SMAPE: 15.24 & 0.245
+2024-12-09 10:22:07 - INFO - Starting Experiment 6/25
+Hyperparameters:
+  window_size=20, hidden_size=8, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:12 - INFO - RMSE, SMAPE: 10.66 & 0.174
+2024-12-09 10:22:12 - INFO - Starting Experiment 7/25
+Hyperparameters:
+  window_size=20, hidden_size=32, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:18 - INFO - RMSE, SMAPE: 8.31 & 0.131
+2024-12-09 10:22:18 - INFO - Starting Experiment 8/25
+Hyperparameters:
+  window_size=20, hidden_size=64, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:24 - INFO - RMSE, SMAPE: 8.01 & 0.127
+2024-12-09 10:22:24 - INFO - Starting Experiment 9/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:29 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:22:29 - INFO - Starting Experiment 10/25
+Hyperparameters:
+  window_size=20, hidden_size=256, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:40 - INFO - RMSE, SMAPE: 7.66 & 0.121
+2024-12-09 10:22:40 - INFO - Starting Experiment 11/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=8,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:46 - INFO - RMSE, SMAPE: 8.18 & 0.133
+2024-12-09 10:22:46 - INFO - Starting Experiment 12/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=32,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:51 - INFO - RMSE, SMAPE: 7.87 & 0.126
+2024-12-09 10:22:51 - INFO - Starting Experiment 13/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=64,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:22:57 - INFO - RMSE, SMAPE: 7.83 & 0.125
+2024-12-09 10:22:57 - INFO - Starting Experiment 14/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:02 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:23:02 - INFO - Starting Experiment 15/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=256,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:07 - INFO - RMSE, SMAPE: 7.65 & 0.120
+2024-12-09 10:23:07 - INFO - Starting Experiment 16/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=1, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:12 - INFO - RMSE, SMAPE: 7.29 & 0.117
+2024-12-09 10:23:12 - INFO - Starting Experiment 17/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:17 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:23:17 - INFO - Starting Experiment 18/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=4, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:25 - INFO - RMSE, SMAPE: 9.21 & 0.150
+2024-12-09 10:23:25 - INFO - Starting Experiment 19/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=8, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:37 - INFO - RMSE, SMAPE: 19.14 & 0.312
+2024-12-09 10:23:37 - INFO - Starting Experiment 20/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:23:43 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:23:43 - INFO - Starting Experiment 21/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.4, output_size=1,  date_as_var=True
+2024-12-09 10:23:48 - INFO - RMSE, SMAPE: 7.79 & 0.124
+2024-12-09 10:23:48 - INFO - Starting Experiment 22/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.6, output_size=1,  date_as_var=True
+2024-12-09 10:23:53 - INFO - RMSE, SMAPE: 7.85 & 0.125
+2024-12-09 10:23:53 - INFO - Starting Experiment 23/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.8, output_size=1,  date_as_var=True
+2024-12-09 10:23:58 - INFO - RMSE, SMAPE: 8.05 & 0.130
+2024-12-09 10:23:58 - INFO - Starting Experiment 24/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=True
+2024-12-09 10:24:04 - INFO - RMSE, SMAPE: 7.78 & 0.124
+2024-12-09 10:24:04 - INFO - Starting Experiment 25/25
+Hyperparameters:
+  window_size=20, hidden_size=128, embed_dim=128,  n_layers=2, dropout_p=0.2, output_size=1,  date_as_var=False
+2024-12-09 10:24:09 - INFO - RMSE, SMAPE: 7.81 & 0.125
